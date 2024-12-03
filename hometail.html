@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-cover bg-fixed bg-no-repeat" style="background-image: url('https://static.vecteezy.com/system/resources/previews/038/811/348/non_2x/ai-generated-beautiful-background-for-jewelry-advertising-free-photo.jpeg');">
+
+    <!-- Navbar -->
+    <div class="bg-teal-500 bg-opacity-70 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h2 class="text-xl font-bold">BlingElegance</h2>
+            <ul class="flex space-x-6 items-center">
+                <li><a href="#home" class="hover:text-gray-200">Home</a></li>
+                <li><a href="#" class="hover:text-gray-200">About Us</a></li>
+                <li><a href="#" class="hover:text-gray-200">Service</a></li>
+                <li><a href="#" class="hover:text-gray-200">Contact Us</a></li>
+                <li><a href="#" class="hover:text-gray-200">Login</a></li>
+                <li>
+                    <img src="./heart.png" alt="Wishlist" class="w-8 h-8">
+                </li>
+                <li>
+                    <img src="./add-to-cart.png" alt="Cart" class="w-8 h-8">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slider -->
+   <!---- <div class="relative max-w-7xl mx-auto mt-32 overflow-hidden rounded-lg shadow-lg ">
+        <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700" aria-label="prevSlide" onclick="prevSlide()">&#10094;</button>
+        <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+            <img src="https://img.freepik.com/premium-photo/design-gold-jewelry-background_87720-108334.jpg" alt="Image 1" class="w-full h-96 object-contain ">
+            <img src="https://wallpapercave.com/wp/wp6607070.jpg" alt="Image 2" class="w-full h-96 object-contain">
+            <img src="https://jewelryrepairco.com/wp-content/uploads/2021/05/pearl_and_bead.jpg" alt="Image 3" class="w-full h-96 object-cover" >
+            <img src="https://img.freepik.com/premium-photo/delicate-intricate-diamond-necklace-with-floral-design_14117-591348.jpg" alt="Image 4" class="w-full h-96 object-contain">
+            <img src="https://images5.alphacoders.com/135/thumb-1920-1352225.jpeg" alt="Image 5" class="w-full h-96 object-contain">
+        </div>
+        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700" onclick="nextSlide()">&#10095;</button>
+    </div>-->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper mt-60">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="https://img.freepik.com/premium-photo/design-gold-jewelry-background_87720-108334.jpg" class="w-full h-80 object-contain"></div>
+          <div class="swiper-slide"><img src="https://wallpapercave.com/wp/wp6607070.jpg" class="w-full h-80 object-contain"></div>
+          <div class="swiper-slide"><img src="https://jewelryrepairco.com/wp-content/uploads/2021/05/pearl_and_bead.jpg"class="w-full h-80 object-contain"></div>
+          <div class="swiper-slide"><img src="https://img.freepik.com/premium-photo/delicate-intricate-diamond-necklace-with-floral-design_14117-591348.jpg" class="w-full h-80 object-contain"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    
+    <!---products-->
+    <div class="relative grid grid-cols-4 mt-52 bg-white" id="home">
+        <!--chain-
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpijYFllW-4AOAoarO_2y-9dRW9iSV65OJPjcJOo8Um_L5c8NUtnYnRJyu2mP9QdVuEE&usqp=CAU" class="w-60 h-60 border-red-300 mt-20 mx-10 drop-shadow-lg rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Dt0WRpIbXgQ3jcSnyxGcfJ9-nHnIwFJYAA&s" class="w-60 h-60 border-red-300 mt-20 mx-10 drop-shadow-lg rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlEZLxw_ra8M33qR_nsERSIkvMoXOIDJGIaA&s" class="w-60 h-60 border-red-300 mt-20 mx-10 drop-shadow-lg rounded">-->
+            <!-- Example for Chain -->
+    <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpijYFllW-4AOAoarO_2y-9dRW9iSV65OJPjcJOo8Um_L5c8NUtnYnRJyu2mP9QdVuEE&usqp=CAU" class="w-60 h-60 border-red-300 rounded">
+        <h3 class="text-lg font-bold mt-4">Gold Chain</h3>
+        <p class="text-gray-500 text-sm">Price: $499</p>
+    </div>
+    <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Dt0WRpIbXgQ3jcSnyxGcfJ9-nHnIwFJYAA&s" class="w-60 h-60 border-red-300 rounded">
+        <h3 class="text-lg font-bold mt-4">Silver Necklace</h3>
+        <p class="text-gray-500 text-sm">Price: $399</p>
+    </div>
+    <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlEZLxw_ra8M33qR_nsERSIkvMoXOIDJGIaA&s" class="w-60 h-60 border-red-300 rounded">
+        <h3 class="text-lg font-bold mt-4">Pearl Pendant</h3>
+        <p class="text-gray-500 text-sm">Price: $299</p>
+    </div>
+    <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kYXXoZrfiZNSORSDyf7n__mny0evSozXJ5zIE_QcZsHWtVck5SpsMCQ13ITTW0iBENM&usqp=CAU" class="w-60 h-60 border-red-300 rounded">
+        <h3 class="text-lg font-bold mt-4">Platinum Bracelet</h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+    </div>
+    
+        <!--earring-->
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?cs=srgb&dl=pexels-dima-valkov-1186343-3266700.jpg&fm=jpg" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://img.freepik.com/free-photo/gold-earrings-with-diamond-top_1340-42891.jpg" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://i.pinimg.com/550x/cb/9c/8f/cb9c8f80c0ce445c98d5ff810169b97c.jpg" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://i.pinimg.com/736x/de/0f/90/de0f90d6d2017da753c44be82b6e241a.jpg" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+        <!--bracelite-->
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://c0.wallpaperflare.com/preview/922/742/438/gold-jewelry-bracelet-jewelry-gold-bracelet-diamond.jpg" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://kinclimg7.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BINK0250V15-POSTER-5228.jpg" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKhGEl5Q3S49_FDJDk-q4YH0he4xnKGZqwwwVC5tIbeZimdmOBPxhJPMylvUqnmJ9ric&usqp=CAU" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+        <div class="mx-10 mt-20 text-center drop-shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzL62s47J_Y-oUcXPS6FoS-pg6Q03kUJ5eeszLZcM3IsUyE5N_NoWJ44SlAHo017CO_P0&usqp=CAU" class="w-60 h-60 border-red-300  rounded">
+        <h3 class="text-lg font-bold mt-4"></h3>
+        <p class="text-gray-500 text-sm">Price: $599</p>
+        </div>
+  <!--rings-->
+  <div class="mx-10 mt-20 text-center drop-shadow-lg">
+  <img src="https://c1.wallpaperflare.com/preview/366/786/437/ring-gold-diamond-white.jpg" class="w-60 h-60 border-red-300  rounded">
+  <h3 class="text-lg font-bold mt-4">"Classic Diamond Engagement Ring</h3>
+  <p class="text-gray-500 text-sm">Price: $1,199</p>
+  </div>
+  <div class="mx-10 mt-20 text-center drop-shadow-lg">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcLZANbPqglg93nU4lr3JPtVXLpp4AkQYAfUnCD105m184bL9VbimpJ9JZjSkrGlSfyPY&usqp=CAU" class="w-60 h-60 border-red-300  rounded">
+  <h3 class="text-lg font-bold mt-4">Timeless Gold</h3>
+  <p class="text-gray-500 text-sm">Price: $599</p>
+  </div>
+  <div class="mx-10 mt-20 text-center drop-shadow-lg">
+  <img src="https://png.pngtree.com/background/20230426/original/pngtree-two-beautiful-gold-wedding-rings-on-the-black-background-picture-image_2486967.jpg" class="w-60 h-60 border-red-300  rounded">
+  <h3 class="text-lg font-bold mt-4">Elegant Gold Rings</h3>
+  <p class="text-gray-500 text-sm">Price: $799</p>
+  </div>
+  <div class="mx-10 mt-20 text-center drop-shadow-lg">
+  <img src="https://img.freepik.com/free-photo/celebrate-sunset-beach-creative-gemstone_1232-3550.jpg" class="w-60 h-60 border-red-300  rounded">
+  <h3 class="text-lg font-bold mt-4">Diamond Ring</h3>
+  <p class="text-gray-500 text-sm">Price: $999</p>
+  </div>
+  <!--diamonds-->
+</div>
+    <!-- Script -->
+   <!--<script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slider = document.getElementById('slider');
+            const slideWidth = slider.children[0].clientWidth;
+            slider.style.transform = `translateX(-${index * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+            const slider = document.getElementById('slider');
+            currentIndex = (currentIndex + 1) % slider.children.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            const slider = document.getElementById('slider');
+            currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
+            showSlide(currentIndex);
+        }
+    </script>-->
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+      
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          loop: true, // Enable continuous loop
+          autoplay: {
+            delay: 3000, // Auto-slide every 3 seconds
+          },
+          speed: 600, // Slide transition speed in milliseconds
+      
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+      </script>
+      
+</body>
+</html>

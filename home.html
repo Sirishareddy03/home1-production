@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://static.vecteezy.com/system/resources/previews/038/811/348/non_2x/ai-generated-beautiful-background-for-jewelry-advertising-free-photo.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+           
+        }
+       /* .header{
+            list-style-type: none;
+
+        }
+        .a,ul,li,#b{
+            display: flex;
+            background-color: aqua;
+            padding: 2px;
+            text-decoration: none;
+            
+        }
+        ul,li,#b{
+            j
+        }
+        button{
+            padding: 7px;
+        }*/
+        .navbar{
+            width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(27, 172, 182, 0.74);
+    box-shadow: 3px 3px 5px ;
+    position: sticky;
+    margin-bottom: 20px;
+}
+.company h2{
+    margin-top: 20px;
+}
+.pages ul li {
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+.pages,ul,li,a,#b{
+    text-decoration: none;
+    color: aliceblue;
+}
+/*body:hover{
+background: url("https://static.vecteezy.com/system/resources/previews/038/811/348/non_2x/ai-generated-beautiful-background-for-jewelry-advertising-free-photo.jpeg");
+height: 100%;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+animation: body 4s infinite;
+}
+@keyframes body{
+    0%{
+         background: url("https://e0.pxfuel.com/wallpapers/306/899/desktop-wallpaper-jewellery-background-gold-jewelry.jpg");
+   height: 100%;
+   width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
+    25%{
+        background: url("https://png.pngtree.com/thumb_back/fw800/background/20231227/pngtree-texture-of-shimmering-gold-jewelry-image_13828937.png");
+        height: 100%;
+        width: 100%;
+         background-repeat: no-repeat;
+         background-size: cover; 
+    }
+    50%{
+          background: url("https://png.pngtree.com/thumb_back/fh260/background/20240913/pngtree-luxury-jewels-banner-for-high-end-glamorous-jewelry-with-shiny-image_16176425.jpg");
+   height:100%;
+   width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    75%{
+        background: url("https://img.freepik.com/premium-photo/bunch-bracelets-with-bunch-diamonds-them_1271244-195746.jpg?semt=ais_hybrid");
+        height: 100%;
+        width: 100%;
+         background-repeat: no-repeat;
+         background-size: cover; 
+    }
+    100%{
+        background: url("https://www.shutterstock.com/image-photo/jewelry-diamond-bracelet-on-black-260nw-184410980.jpg");
+        height: 100%;
+        width: 100%;
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+}*/
+.slider-container {
+      position: relative;
+      width: 100%;
+      max-width: 1600px;
+      height: 400px;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-top: 90px;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider img {
+      width: 100%;
+      max-width: 1600px;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+    </style>
+</head>
+<body>
+   
+    <div class="navbar">
+        <div class="company">
+            <h2>BlingElegance</h2>
+        </div>
+        <div class="pages">
+            <ul>
+                <li><a href id="b"="#" >Home</a></li>
+                <li><a href id="b"="#">About us</a></li>
+                <li><a href id="b"="#">Service</a></li>
+                <li><a href id="b"="#">Contact us</a></li>
+                <li><a href id="b"="#">Login</a></li>
+                <li><img src="./heart.png "width="50px" height="50px"><a href id="b"="#"></a></li>
+                <li><img src="./add-to-cart.png "width="50px" height="50px"><a href id="b"="#"></a></li>
+            
+            </ul>
+        </div>
+    </div>
+    <div class="slider-container">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <div class="slider" id="slider">
+          <img src="https://img.freepik.com/premium-photo/design-gold-jewelry-background_87720-108334.jpg" alt="Image 1">
+          <img src="https://wallpapercave.com/wp/wp6607070.jpg" alt="Image 2">
+          <img src="https://jewelryrepairco.com/wp-content/uploads/2021/05/pearl_and_bead.jpg" alt="Image 3">
+          <img src="https://img.freepik.com/premium-photo/delicate-intricate-diamond-necklace-with-floral-design_14117-591348.jpg" alt="Image 4">
+          <img src="https://images5.alphacoders.com/135/thumb-1920-1352225.jpeg" alt="Image 3">
+        </div>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      </div>
+    <script>
+        let currentIndex = 0;
+    
+        function showSlide(index) {
+          const slider = document.getElementById('slider');
+          const slideWidth = slider.children[0].clientWidth;
+          slider.style.transform = `translateX(-${index * slideWidth}px)`;
+        }
+    
+        function nextSlide() {
+          const slider = document.getElementById('slider');
+          currentIndex = (currentIndex + 1) % slider.children.length;
+          showSlide(currentIndex);
+        }
+    
+        function prevSlide() {
+          const slider = document.getElementById('slider');
+          currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
+          showSlide(currentIndex);
+        }
+    </script>
+</body>
+</html>
